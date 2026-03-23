@@ -1,0 +1,1 @@
+/home/thefirsthero6/.config/omarchy/current/theme/neovim.lua
