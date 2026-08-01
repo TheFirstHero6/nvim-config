@@ -23,6 +23,14 @@ return {
     telescope.load_extension("bibtex")
   end,
   keys = {
-    { "<leader>ci", "<cmd>Telescope bibtex<CR>", desc = "Insert Citation" },
+    {
+      "<leader>ci",
+      function()
+        require("telescope").extensions.bibtex.bibtex({
+          format_string = "[@%s]",
+        })
+      end,
+      desc = "Insert Citation",
+    },
   },
 }

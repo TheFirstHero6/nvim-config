@@ -2,6 +2,11 @@
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 -- Add any additional options here
 vim.opt.relativenumber = false
+vim.g.autoformat = true
+vim.g.lazyvim_rust_diagnostics = "rust-analyzer"
+
+-- Force opaque setup in Neovim (ignore terminal transparency)
+vim.g.theme_transparent = false
 
 -- RPC socket for Sioyek inverse search
 local socket = "/tmp/nvimsocket"
