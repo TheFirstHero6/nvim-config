@@ -42,8 +42,8 @@ return {
       end
       -- Inject standard academic metadata required by Pandoc
       if out.title == nil then out.title = note.title or "" end
-      if out.author == nil then out.author = "Klaus Mikaelson" end
-      if out.course == nil then out.course = "Philosophy 101" end
+      if out.author == nil then out.author = "Klaus Chamberlain" end
+      if out.course == nil then out.course = "Philosophy" end
       if out.date == nil then out.date = os.date("%B %d, %Y") end
       if out.bibliography == nil then out.bibliography = "../references.bib" end
       if out.csl == nil then out.csl = "../csl/chicago-fullnote-bibliography.csl" end
